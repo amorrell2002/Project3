@@ -79,6 +79,6 @@ struct County{
     float seniorsBeyondTwentyMile;
 
     County(json& fileDemographics, json& fileFoodData);
-    
+    static const map<string, string> stateMap;
 
 };
