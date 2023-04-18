@@ -12,20 +12,11 @@ struct County{
     //County Demographic Data
     string countyName;
     string stateName;
-    float age65AndOlder;
-    float age18AndUnder;
     float ageUnder18;
     float ageUnder5;
-    float educationBatchelorsOrHigher;
-    float educationHighSchoolOrHigher;
     int nonemployerEstablishments;
-    float ethnicAmericanIndianAndAlaskaNative;
-    float ethnicAsian;
-    float ethnicBlack;
-    float ethnicHispanic;
     float ethnicHawaiianAndPacificIslander;
     float ethnicTwoOrMoreRaces;
-    float ethnicWhite;
     float ethnicWhiteNotHispanic;
     float homeownershipRate;
     int households;
@@ -39,7 +30,6 @@ struct County{
     float livingInSameHouseMoreThanOneYear;
     int manufacturersShipments;
     float meanTravelTimeToWork;
-    float percentFemale;
     int veterans;
     int population2020;
     int population2010;
@@ -61,6 +51,21 @@ struct County{
     float vehicleAccessHalfMile;
     float vehicleAccessTenMile;
     float vehicleAccessTwentyMile;
+    
+
+
+
+    //Data we are planning on using (all food access is coverted to percent during cconstruction)
+    float age65AndOlder;
+    float age18AndUnder;
+    float educationBatchelorsOrHigher;
+    float educationHighSchoolOrHigher;
+    float ethnicAmericanIndianAndAlaskaNative;
+    float ethnicAsian;
+    float ethnicBlack;
+    float ethnicHispanic;
+    float ethnicWhite;
+    float percentFemale;
     float kidsBeyondOneMile;
     float kidsBeyondHalfMile;
     float kidsBeyondTenMile;
@@ -77,6 +82,9 @@ struct County{
     float seniorsBeyondHalfMile;
     float seniorsBeyondTenMile;
     float seniorsBeyondTwentyMile;
+
+
+
 
     County(json& fileDemographics, json& fileFoodData);
     static const map<string, string> stateMap;

@@ -9,7 +9,7 @@
                 "-g",
                 "*.cpp",
                 "-I",
-                "./",
+                "./Merge_Sort",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

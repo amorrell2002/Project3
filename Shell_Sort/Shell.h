@@ -8,4 +8,4 @@ struct Shell{
     static void Sort(vector<County>& counties, string toSortBy);
 
     static float GetStatistic(string statisticName);
-}
+};
