@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <map>
-#include "./County_Class/County.h"
+#include "County.h"
 
 struct Merge{
     static map<string, int> stringLookup;
