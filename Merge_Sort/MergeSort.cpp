@@ -36,11 +36,11 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
     vector<County> rightVector;
     vector<County> outputVector;
 
-    for(int i = left; i < mid; i++)
+    for(int i = left; i <= mid; i++)
     {
         leftVector.push_back(counties[i]);
     }
-    for(int i = mid; i <= right; i++)
+    for(int i = mid + 1; i <= right; i++)
     {
         rightVector.push_back(counties[i]);
     }
@@ -63,31 +63,306 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
                 itLeft++;
             }
             break;
-        // case 1:
-        // case 2:
-        // case 3:
-        // case 4:
-        // case 5:
-        // case 6:
-        // case 7:
-        // case 8:
-        // case 9:
-        // case 10:
-        // case 11:
-        // case 12:
-        // case 13:
-        // case 14:
-        // case 15:
-        // case 16:
-        // case 17:
-        // case 18:
-        // case 19:
-        // case 20:
-        // case 21:
-        // case 22:
-        // case 23:
-        // case 24:
-        // case 25:
+        case 1:
+            if((*itLeft).age18AndUnder > (*itRight).age18AndUnder)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 2:
+            if((*itLeft).educationBatchelorsOrHigher > (*itRight).educationBatchelorsOrHigher)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 3:
+            if((*itLeft).educationHighSchoolOrHigher > (*itRight).educationHighSchoolOrHigher)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 4:
+            if((*itLeft).ethnicAmericanIndianAndAlaskaNative > (*itRight).ethnicAmericanIndianAndAlaskaNative)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 5:
+            if((*itLeft).ethnicAsian > (*itRight).ethnicAsian)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 6:
+            if((*itLeft).ethnicBlack > (*itRight).ethnicBlack)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 7:
+            if((*itLeft).ethnicHispanic > (*itRight).ethnicHispanic)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 8:
+            if((*itLeft).ethnicWhite > (*itRight).ethnicWhite)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 9:
+            if((*itLeft).percentFemale > (*itRight).percentFemale)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 10:
+            if((*itLeft).kidsBeyondOneMile > (*itRight).kidsBeyondOneMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 11:
+            if((*itLeft).kidsBeyondHalfMile > (*itRight).kidsBeyondHalfMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 12:
+            if((*itLeft).kidsBeyondTenMile > (*itRight).kidsBeyondTenMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 13:
+            if((*itLeft).kidsBeyondTwentyMile > (*itRight).kidsBeyondTwentyMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 14:
+            if((*itLeft).lowIncomeBeyondOneMile > (*itRight).lowIncomeBeyondOneMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 15:
+            if((*itLeft).lowIncomeBeyondHalfMile > (*itRight).lowIncomeBeyondHalfMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 16:
+            if((*itLeft).lowIncomeBeyondTenMile > (*itRight).lowIncomeBeyondTenMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 17:
+            if((*itLeft).lowIncomeBeyondTwentyMile > (*itRight).lowIncomeBeyondTwentyMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 18:
+            if((*itLeft).popBeyondOneMile > (*itRight).popBeyondOneMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 19:
+            if((*itLeft).popBeyondHalfMile > (*itRight).popBeyondHalfMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 20:
+            if((*itLeft).popBeyondTenMile > (*itRight).popBeyondTenMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 21:
+            if((*itLeft).popBeyondTwentyMile > (*itRight).popBeyondTwentyMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 22:
+            if((*itLeft).seniorsBeyondOneMile > (*itRight).seniorsBeyondOneMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 23:
+            if((*itLeft).seniorsBeyondHalfMile > (*itRight).seniorsBeyondHalfMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 24:
+            if((*itLeft).seniorsBeyondTenMile > (*itRight).seniorsBeyondTenMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
+        case 25:
+            if((*itLeft).seniorsBeyondTwentyMile > (*itRight).seniorsBeyondTwentyMile)
+            {
+                outputVector.push_back((*itRight));
+                itRight++;
+            }
+            else
+            {
+                outputVector.push_back((*itLeft));
+                itLeft++;
+            }
+            break;
     };
 };
     while(itLeft != leftVector.end())
@@ -101,7 +376,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
         itRight++;
     }
     vector<County>::iterator itOut = outputVector.begin();
-    for(int i = left; i < right; i++)
+    for(int i = left; i <= right; i++)
     {
         counties[i] = *itOut;
         itOut++;

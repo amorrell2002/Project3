@@ -35,10 +35,14 @@ int main()
             
         }
     }
-
     for(County i: counties)
     {
-        Merge::MergeSort(counties, 0, counties.size() - 1, "age65AndOlder");
+        cout << i.countyName << " : " << i.age65AndOlder << endl;
+    }
+    cout << "===============" << endl;
+    Merge::MergeSort(counties, 0, counties.size() - 1, "age65AndOlder");
+    for(County i: counties)
+    {    
         cout << i.countyName << " : " << i.age65AndOlder << endl;
     }
 
