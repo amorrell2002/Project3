@@ -30,11 +30,11 @@ map<string, int> Merge::stringLookup =  {
     };
 
 
-void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right, int switchCode)
+void Merge::mergeVectors(vector<County*>& counties, int left, int mid, int right, int switchCode)
 {
-    vector<County> leftVector;
-    vector<County> rightVector;
-    vector<County> outputVector;
+    vector<County*> leftVector;
+    vector<County*> rightVector;
+    vector<County*> outputVector;
 
     for(int i = left; i <= mid; i++)
     {
@@ -45,14 +45,14 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
         rightVector.push_back(counties[i]);
     }
 
-    vector<County>::iterator itLeft = leftVector.begin();
-    vector<County>::iterator itRight = rightVector.begin();
+    vector<County*>::iterator itLeft = leftVector.begin();
+    vector<County*>::iterator itRight = rightVector.begin();
 
     while(itLeft != leftVector.end() && itRight != rightVector.end())
     {
         switch (switchCode){
         case 0:
-            if((*itLeft).age65AndOlder > (*itRight).age65AndOlder)
+            if((*itLeft)->age65AndOlder > (*itRight)->age65AndOlder)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -64,7 +64,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 1:
-            if((*itLeft).age18AndUnder > (*itRight).age18AndUnder)
+            if((*itLeft)->age18AndUnder > (*itRight)->age18AndUnder)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -76,7 +76,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 2:
-            if((*itLeft).educationBatchelorsOrHigher > (*itRight).educationBatchelorsOrHigher)
+            if((*itLeft)->educationBatchelorsOrHigher > (*itRight)->educationBatchelorsOrHigher)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -88,7 +88,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 3:
-            if((*itLeft).educationHighSchoolOrHigher > (*itRight).educationHighSchoolOrHigher)
+            if((*itLeft)->educationHighSchoolOrHigher > (*itRight)->educationHighSchoolOrHigher)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -100,7 +100,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 4:
-            if((*itLeft).ethnicAmericanIndianAndAlaskaNative > (*itRight).ethnicAmericanIndianAndAlaskaNative)
+            if((*itLeft)->ethnicAmericanIndianAndAlaskaNative > (*itRight)->ethnicAmericanIndianAndAlaskaNative)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -112,7 +112,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 5:
-            if((*itLeft).ethnicAsian > (*itRight).ethnicAsian)
+            if((*itLeft)->ethnicAsian > (*itRight)->ethnicAsian)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -124,7 +124,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 6:
-            if((*itLeft).ethnicBlack > (*itRight).ethnicBlack)
+            if((*itLeft)->ethnicBlack > (*itRight)->ethnicBlack)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -136,7 +136,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 7:
-            if((*itLeft).ethnicHispanic > (*itRight).ethnicHispanic)
+            if((*itLeft)->ethnicHispanic > (*itRight)->ethnicHispanic)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -148,7 +148,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 8:
-            if((*itLeft).ethnicWhite > (*itRight).ethnicWhite)
+            if((*itLeft)->ethnicWhite > (*itRight)->ethnicWhite)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -160,7 +160,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 9:
-            if((*itLeft).percentFemale > (*itRight).percentFemale)
+            if((*itLeft)->percentFemale > (*itRight)->percentFemale)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -172,7 +172,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 10:
-            if((*itLeft).kidsBeyondOneMile > (*itRight).kidsBeyondOneMile)
+            if((*itLeft)->kidsBeyondOneMile > (*itRight)->kidsBeyondOneMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -184,7 +184,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 11:
-            if((*itLeft).kidsBeyondHalfMile > (*itRight).kidsBeyondHalfMile)
+            if((*itLeft)->kidsBeyondHalfMile > (*itRight)->kidsBeyondHalfMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -196,7 +196,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 12:
-            if((*itLeft).kidsBeyondTenMile > (*itRight).kidsBeyondTenMile)
+            if((*itLeft)->kidsBeyondTenMile > (*itRight)->kidsBeyondTenMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -208,7 +208,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 13:
-            if((*itLeft).kidsBeyondTwentyMile > (*itRight).kidsBeyondTwentyMile)
+            if((*itLeft)->kidsBeyondTwentyMile > (*itRight)->kidsBeyondTwentyMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -220,7 +220,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 14:
-            if((*itLeft).lowIncomeBeyondOneMile > (*itRight).lowIncomeBeyondOneMile)
+            if((*itLeft)->lowIncomeBeyondOneMile > (*itRight)->lowIncomeBeyondOneMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -232,7 +232,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 15:
-            if((*itLeft).lowIncomeBeyondHalfMile > (*itRight).lowIncomeBeyondHalfMile)
+            if((*itLeft)->lowIncomeBeyondHalfMile > (*itRight)->lowIncomeBeyondHalfMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -244,7 +244,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 16:
-            if((*itLeft).lowIncomeBeyondTenMile > (*itRight).lowIncomeBeyondTenMile)
+            if((*itLeft)->lowIncomeBeyondTenMile > (*itRight)->lowIncomeBeyondTenMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -256,7 +256,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 17:
-            if((*itLeft).lowIncomeBeyondTwentyMile > (*itRight).lowIncomeBeyondTwentyMile)
+            if((*itLeft)->lowIncomeBeyondTwentyMile > (*itRight)->lowIncomeBeyondTwentyMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -268,7 +268,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 18:
-            if((*itLeft).popBeyondOneMile > (*itRight).popBeyondOneMile)
+            if((*itLeft)->popBeyondOneMile > (*itRight)->popBeyondOneMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -280,7 +280,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 19:
-            if((*itLeft).popBeyondHalfMile > (*itRight).popBeyondHalfMile)
+            if((*itLeft)->popBeyondHalfMile > (*itRight)->popBeyondHalfMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -292,7 +292,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 20:
-            if((*itLeft).popBeyondTenMile > (*itRight).popBeyondTenMile)
+            if((*itLeft)->popBeyondTenMile > (*itRight)->popBeyondTenMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -304,7 +304,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 21:
-            if((*itLeft).popBeyondTwentyMile > (*itRight).popBeyondTwentyMile)
+            if((*itLeft)->popBeyondTwentyMile > (*itRight)->popBeyondTwentyMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -316,7 +316,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 22:
-            if((*itLeft).seniorsBeyondOneMile > (*itRight).seniorsBeyondOneMile)
+            if((*itLeft)->seniorsBeyondOneMile > (*itRight)->seniorsBeyondOneMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -328,7 +328,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 23:
-            if((*itLeft).seniorsBeyondHalfMile > (*itRight).seniorsBeyondHalfMile)
+            if((*itLeft)->seniorsBeyondHalfMile > (*itRight)->seniorsBeyondHalfMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -340,7 +340,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 24:
-            if((*itLeft).seniorsBeyondTenMile > (*itRight).seniorsBeyondTenMile)
+            if((*itLeft)->seniorsBeyondTenMile > (*itRight)->seniorsBeyondTenMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -352,7 +352,7 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
             }
             break;
         case 25:
-            if((*itLeft).seniorsBeyondTwentyMile > (*itRight).seniorsBeyondTwentyMile)
+            if((*itLeft)->seniorsBeyondTwentyMile > (*itRight)->seniorsBeyondTwentyMile)
             {
                 outputVector.push_back((*itRight));
                 itRight++;
@@ -375,14 +375,14 @@ void Merge::mergeVectors(vector<County>& counties, int left, int mid, int right,
         outputVector.push_back((*itRight));
         itRight++;
     }
-    vector<County>::iterator itOut = outputVector.begin();
+    vector<County*>::iterator itOut = outputVector.begin();
     for(int i = left; i <= right; i++)
     {
         counties[i] = *itOut;
         itOut++;
     }
 };
-void Merge::MergeSort(vector<County>& counties, int start, int end, string toSortBy)
+void Merge::MergeSort(vector<County*>& counties, int start, int end, string toSortBy)
 {
     int switchCode = Merge::stringLookup[toSortBy];
 
