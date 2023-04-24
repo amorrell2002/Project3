@@ -48,4 +48,6 @@ int main()
         cout << i->countyName << " : " << i->age65AndOlder << endl;
     }
 
+    return 0;
+
 };
