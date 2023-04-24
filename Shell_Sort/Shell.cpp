@@ -10,7 +10,6 @@ void Shell::Sort(vector<County*>& counties, string toSortBy){
             int cur = i; //we will follow vector[cur], which will start being at i but will often decrease, but we don't want to modify i here
             while(cur - gap >= 0 && GetStatistic(counties.at(cur), toSortBy) < GetStatistic(counties.at(cur - gap), toSortBy)){  //check if our current value is less than the value we get from going back 'gap' amount in the vector
                 //keep doing this as we follow a single value
-
                 //the while condition says that we need to swap, so swap we shall
                 County* temp = counties.at(cur - gap);
                 counties.at(cur - gap) = counties.at(cur);
@@ -20,7 +19,7 @@ void Shell::Sort(vector<County*>& counties, string toSortBy){
                 cur = cur-gap;
             }
         }
-        if(gap = 2){
+        if(gap == 2){
             gap = 3;    // 3/2.2 = 1, which is what we want
         }
     }
