@@ -17,6 +17,14 @@ static bool vectorEquals(vector<County*> v1, vector<County*> v2) {
     }
 }
 
+static string boolToString(bool bVal){
+    if(bVal){
+        return "true";
+    }else{
+        return "false";
+    }
+}
+
 int main()
 {
     fstream inFile("../data/test_demographics.json");
@@ -72,7 +80,7 @@ int main()
         cout << i->countyName << " : " << i->age65AndOlder << endl;
     }
 
-    cout << "Equality check: " << vectorEquals(counties, shellCopy) << endl;
+    cout << "Equality check: " << boolToString(vectorEquals(counties, shellCopy)) << endl;
 
     return 0;
 
