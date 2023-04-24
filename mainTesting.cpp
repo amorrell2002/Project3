@@ -35,7 +35,7 @@ int main()
 
     //Load Food Data File
     inFile.close();
-    inFile.open("../data/food_access.json");
+    inFile.open("./data/food_access.json");
     inFile >> foodFile;
 
     vector<County*> counties;

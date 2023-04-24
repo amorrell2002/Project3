@@ -12,6 +12,8 @@
                 "./County_Class/*.cpp",
                 "-g",
                 "./Merge_Sort/*.cpp",
+                "-g",
+                "Shell_Sort/*.cpp",
                 "-I",
                 "./Merge_Sort",
                 "-L",
