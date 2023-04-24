@@ -10,7 +10,7 @@ using json = nlohmann::json;
 using namespace std;
 struct County{
     //County Demographic Data
-    string countyName;
+    string countyName = "";
     string stateName;
     float ageUnder18;
     float ageUnder5;
@@ -86,7 +86,8 @@ struct County{
 
 
 
-    County(json& fileDemographics, json& fileFoodData);
+    void loadFoodData(json& fileFoodData);
+    void loadDemoData(json& fileDemographics);
     static const map<string, string> stateMap;
 
 };

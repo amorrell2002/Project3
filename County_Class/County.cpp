@@ -1,11 +1,36 @@
 #include "County.h"
 
-County::County(json& fileDemographics, json& fileFoodData)
-{
-   
-    
-    countyName = fileDemographics["County"];
+
+void County::loadFoodData(json& fileFoodData)
+{   
+    countyName = fileFoodData["County"];
     stateName = fileFoodData["State"];
+    residingInGroupQuarter = fileFoodData["Housing Data"]["Residing in Group Quarters"];
+    totalHousingUnits = fileFoodData["Housing Data"]["Total Housing Units"];
+    vehicleAccessOneMile = fileFoodData["Vehicle Access"]["1 Mile"];
+    vehicleAccessHalfMile = fileFoodData["Vehicle Access"]["1/2 Mile"];
+    vehicleAccessTenMile = fileFoodData["Vehicle Access"]["10 Miles"];
+    vehicleAccessTwentyMile = fileFoodData["Vehicle Access"]["20 Miles"];
+    kidsBeyondOneMile = fileFoodData["Low Access Numbers"]["Children"]["1 Mile"];
+    kidsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Children"]["1/2 Mile"];
+    kidsBeyondTenMile = fileFoodData["Low Access Numbers"]["Children"]["10 Miles"];
+    kidsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Children"]["20 Miles"];
+    lowIncomeBeyondOneMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1 Mile"];
+    lowIncomeBeyondHalfMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1/2 Mile"];
+    lowIncomeBeyondTenMile = fileFoodData["Low Access Numbers"]["Low Income People"]["10 Miles"];
+    lowIncomeBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Low Income People"]["20 Miles"];
+    popBeyondOneMile = fileFoodData["Low Access Numbers"]["People"]["1 Mile"];
+    popBeyondHalfMile = fileFoodData["Low Access Numbers"]["People"]["1/2 Mile"];
+    popBeyondTenMile = fileFoodData["Low Access Numbers"]["People"]["10 Miles"];
+    popBeyondTwentyMile = fileFoodData["Low Access Numbers"]["People"]["20 Miles"];
+    seniorsBeyondOneMile = fileFoodData["Low Access Numbers"]["Seniors"]["1 Mile"];
+    seniorsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Seniors"]["1/2 Mile"];
+    seniorsBeyondTenMile = fileFoodData["Low Access Numbers"]["Seniors"]["10 Miles"];
+    seniorsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Seniors"]["20 Miles"];
+}
+void County::loadDemoData(json& fileDemographics)
+{
+    countyName = fileDemographics["County"];
     age65AndOlder = fileDemographics["Age"]["Percent 65 and Older"];
     age18AndUnder = fileDemographics["Age"]["Percent Under 18 Years"];
     ageUnder5 = fileDemographics["Age"]["Percent Under 5 Years"];
@@ -46,30 +71,8 @@ County::County(json& fileDemographics, json& fileFoodData)
     firmsNonMinorityOwned = fileDemographics["Employment"]["Firms"]["Nonminority-Owned"];
     firmsVeteranOwned = fileDemographics["Employment"]["Firms"]["Veteran-Owned"];
     firmsNonVeteranOwned = fileDemographics["Employment"]["Firms"]["Nonveteran-Owned"];
-    residingInGroupQuarter = fileFoodData["Housing Data"]["Residing in Group Quarters"];
-    totalHousingUnits = fileFoodData["Housing Data"]["Total Housing Units"];
-    vehicleAccessOneMile = fileFoodData["Vehicle Access"]["1 Mile"];
-    vehicleAccessHalfMile = fileFoodData["Vehicle Access"]["1/2 Mile"];
-    vehicleAccessTenMile = fileFoodData["Vehicle Access"]["10 Miles"];
-    vehicleAccessTwentyMile = fileFoodData["Vehicle Access"]["20 Miles"];
-    kidsBeyondOneMile = fileFoodData["Low Access Numbers"]["Children"]["1 Mile"];
-    kidsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Children"]["1/2 Mile"];
-    kidsBeyondTenMile = fileFoodData["Low Access Numbers"]["Children"]["10 Miles"];
-    kidsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Children"]["20 Miles"];
-    lowIncomeBeyondOneMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1 Mile"];
-    lowIncomeBeyondHalfMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1/2 Mile"];
-    lowIncomeBeyondTenMile = fileFoodData["Low Access Numbers"]["Low Income People"]["10 Miles"];
-    lowIncomeBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Low Income People"]["20 Miles"];
-    popBeyondOneMile = fileFoodData["Low Access Numbers"]["People"]["1 Mile"];
-    popBeyondHalfMile = fileFoodData["Low Access Numbers"]["People"]["1/2 Mile"];
-    popBeyondTenMile = fileFoodData["Low Access Numbers"]["People"]["10 Miles"];
-    popBeyondTwentyMile = fileFoodData["Low Access Numbers"]["People"]["20 Miles"];
-    seniorsBeyondOneMile = fileFoodData["Low Access Numbers"]["Seniors"]["1 Mile"];
-    seniorsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Seniors"]["1/2 Mile"];
-    seniorsBeyondTenMile = fileFoodData["Low Access Numbers"]["Seniors"]["10 Miles"];
-    seniorsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Seniors"]["20 Miles"];
+}
 
-};
 
 const map<string, string> County::stateMap = {
         {"AL", "Alabama"},
