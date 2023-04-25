@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication1.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Graph.cpp">
@@ -62,6 +62,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="plotPoint.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="blueplotPoint.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

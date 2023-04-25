@@ -51,6 +51,7 @@ struct County {
     float vehicleAccessHalfMile;
     float vehicleAccessTenMile;
     float vehicleAccessTwentyMile;
+    float population;
 
 
 

@@ -52,11 +52,17 @@ void Graph::draw(vector<County*>& counties, string demographicSelection, string 
     window.clear(Color::Black);
     window.draw(blankGraphSprite);
     //Print dots for counties
-    for (int i = 0; i < counties.size() - 1; i++)
+    for (int i = 10; i < counties.size() - 1; i++)
     {
+        //cout << "demographic value: " << Shell::GetStatistic(counties[i], demographicSelection) << endl;
+        //cout << "food access value: " << Shell::GetStatistic(counties[i], foodAccessSelection) << endl;
+
         float x = 126 + 937 * Shell::GetStatistic(counties[i], demographicSelection) / 100;
-        float y = 1040 - (937 * Shell::GetStatistic(counties[i], foodAccessSelection)) / counties[i]->population2010;
-        if (i <= 10 || i >= (counties.size() - 10))
+        float y = 1040 - (937 * Shell::GetStatistic(counties[i], foodAccessSelection)) / 100;
+        
+        //cout << "x coordinate: " << x << endl;
+       // cout << "y coordinate: " << y << endl;
+        if (i >= (counties.size() - 10))
         {
             extremePointSprite.setPosition(sf::Vector2f(x, y));
             window.draw(extremePointSprite);
@@ -66,6 +72,14 @@ void Graph::draw(vector<County*>& counties, string demographicSelection, string 
             pointSprite.setPosition(sf::Vector2f(x, y));
             window.draw(pointSprite);
         }       
+    }
+    for(int i = 0; i <= 9; i ++)
+    {
+        float x = 126 + 937 * Shell::GetStatistic(counties[i], demographicSelection) / 100;
+        float y = 1040 - (937 * Shell::GetStatistic(counties[i], foodAccessSelection)) / 100;
+
+        extremePointSprite.setPosition(sf::Vector2f(x, y));
+        window.draw(extremePointSprite);
     }
     window.display();
 }

@@ -1,32 +1,33 @@
 #include "County.h"
 
-
 void County::loadFoodData(json& fileFoodData)
 {
+    population = fileFoodData["Population"];
+    //cout << "population: " << population << endl;
     countyName = fileFoodData["County"];
     stateName = fileFoodData["State"];
     residingInGroupQuarter = fileFoodData["Housing Data"]["Residing in Group Quarters"];
     totalHousingUnits = fileFoodData["Housing Data"]["Total Housing Units"];
-    vehicleAccessOneMile = fileFoodData["Vehicle Access"]["1 Mile"];
-    vehicleAccessHalfMile = fileFoodData["Vehicle Access"]["1/2 Mile"];
-    vehicleAccessTenMile = fileFoodData["Vehicle Access"]["10 Miles"];
+    vehicleAccessOneMile = fileFoodData["Vehicle Access"]["1 Mile"] / population * 100;
+    vehicleAccessHalfMile = fileFoodData["Vehicle Access"]["1/2 Mile"] / population * 100;
+    vehicleAccessTenMile = fileFoodData["Vehicle Access"]["10 Miles"] / population * 100;
     vehicleAccessTwentyMile = fileFoodData["Vehicle Access"]["20 Miles"];
-    kidsBeyondOneMile = fileFoodData["Low Access Numbers"]["Children"]["1 Mile"];
-    kidsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Children"]["1/2 Mile"];
-    kidsBeyondTenMile = fileFoodData["Low Access Numbers"]["Children"]["10 Miles"];
-    kidsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Children"]["20 Miles"];
-    lowIncomeBeyondOneMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1 Mile"];
-    lowIncomeBeyondHalfMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1/2 Mile"];
-    lowIncomeBeyondTenMile = fileFoodData["Low Access Numbers"]["Low Income People"]["10 Miles"];
-    lowIncomeBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Low Income People"]["20 Miles"];
-    popBeyondOneMile = fileFoodData["Low Access Numbers"]["People"]["1 Mile"];
-    popBeyondHalfMile = fileFoodData["Low Access Numbers"]["People"]["1/2 Mile"];
-    popBeyondTenMile = fileFoodData["Low Access Numbers"]["People"]["10 Miles"];
-    popBeyondTwentyMile = fileFoodData["Low Access Numbers"]["People"]["20 Miles"];
-    seniorsBeyondOneMile = fileFoodData["Low Access Numbers"]["Seniors"]["1 Mile"];
-    seniorsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Seniors"]["1/2 Mile"];
-    seniorsBeyondTenMile = fileFoodData["Low Access Numbers"]["Seniors"]["10 Miles"];
-    seniorsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Seniors"]["20 Miles"];
+    kidsBeyondOneMile = fileFoodData["Low Access Numbers"]["Children"]["1 Mile"] / population * 100;
+    kidsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Children"]["1/2 Mile"] / population * 100;
+    kidsBeyondTenMile = fileFoodData["Low Access Numbers"]["Children"]["10 Miles"] / population * 100;
+    kidsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Children"]["20 Miles"] / population * 100;
+    lowIncomeBeyondOneMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1 Mile"] / population * 100;
+    lowIncomeBeyondHalfMile = fileFoodData["Low Access Numbers"]["Low Income People"]["1/2 Mile"] / population * 100;
+    lowIncomeBeyondTenMile = fileFoodData["Low Access Numbers"]["Low Income People"]["10 Miles"] / population * 100;
+    lowIncomeBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Low Income People"]["20 Miles"] / population * 100;
+    popBeyondOneMile = fileFoodData["Low Access Numbers"]["People"]["1 Mile"] / population * 100;
+    popBeyondHalfMile = fileFoodData["Low Access Numbers"]["People"]["1/2 Mile"] / population * 100;
+    popBeyondTenMile = fileFoodData["Low Access Numbers"]["People"]["10 Miles"] / population * 100;
+    popBeyondTwentyMile = fileFoodData["Low Access Numbers"]["People"]["20 Miles"] / population * 100;
+    seniorsBeyondOneMile = fileFoodData["Low Access Numbers"]["Seniors"]["1 Mile"] / population * 100;
+    seniorsBeyondHalfMile = fileFoodData["Low Access Numbers"]["Seniors"]["1/2 Mile"] / population * 100;
+    seniorsBeyondTenMile = fileFoodData["Low Access Numbers"]["Seniors"]["10 Miles"] / population * 100;
+    seniorsBeyondTwentyMile = fileFoodData["Low Access Numbers"]["Seniors"]["20 Miles"] / population * 100;
 }
 void County::loadDemoData(json& fileDemographics)
 {
@@ -73,57 +74,55 @@ void County::loadDemoData(json& fileDemographics)
     firmsNonVeteranOwned = fileDemographics["Employment"]["Firms"]["Nonveteran-Owned"];
 }
 
-
 const map<string, string> County::stateMap = {
-        {"AL", "Alabama"},
-        {"AK", "Alaska"},
-        {"AZ", "Arizona"},
-        {"AR", "Arkansas"},
-        {"CA", "California"},
-        {"CO", "Colorado"},
-        {"CT", "Connecticut"},
-        {"DE", "Delaware"},
-        {"FL", "Florida"},
-        {"GA", "Georgia"},
-        {"HI", "Hawaii"},
-        {"ID", "Idaho"},
-        {"IL", "Illinois"},
-        {"IN", "Indiana"},
-        {"IA", "Iowa"},
-        {"KS", "Kansas"},
-        {"KY", "Kentucky"},
-        {"LA", "Louisiana"},
-        {"ME", "Maine"},
-        {"MD", "Maryland"},
-        {"MA", "Massachusetts"},
-        {"MI", "Michigan"},
-        {"MN", "Minnesota"},
-        {"MS", "Mississippi"},
-        {"MO", "Missouri"},
-        {"MT", "Montana"},
-        {"NE", "Nebraska"},
-        {"NV", "Nevada"},
-        {"NH", "New Hampshire"},
-        {"NJ", "New Jersey"},
-        {"NM", "New Mexico"},
-        {"NY", "New York"},
-        {"NC", "North Carolina"},
-        {"ND", "North Dakota"},
-        {"OH", "Ohio"},
-        {"OK", "Oklahoma"},
-        {"OR", "Oregon"},
-        {"PA", "Pennsylvania"},
-        {"RI", "Rhode Island"},
-        {"SC", "South Carolina"},
-        {"SD", "South Dakota"},
-        {"TN", "Tennessee"},
-        {"TX", "Texas"},
-        {"UT", "Utah"},
-        {"VT", "Vermont"},
-        {"VA", "Virginia"},
-        {"WA", "Washington"},
-        {"WV", "West Virginia"},
-        {"WI", "Wisconsin"},
-        {"WY", "Wyoming"},
-        {"DC", "District of Columbia"}
-};
+    {"AL", "Alabama"},
+    {"AK", "Alaska"},
+    {"AZ", "Arizona"},
+    {"AR", "Arkansas"},
+    {"CA", "California"},
+    {"CO", "Colorado"},
+    {"CT", "Connecticut"},
+    {"DE", "Delaware"},
+    {"FL", "Florida"},
+    {"GA", "Georgia"},
+    {"HI", "Hawaii"},
+    {"ID", "Idaho"},
+    {"IL", "Illinois"},
+    {"IN", "Indiana"},
+    {"IA", "Iowa"},
+    {"KS", "Kansas"},
+    {"KY", "Kentucky"},
+    {"LA", "Louisiana"},
+    {"ME", "Maine"},
+    {"MD", "Maryland"},
+    {"MA", "Massachusetts"},
+    {"MI", "Michigan"},
+    {"MN", "Minnesota"},
+    {"MS", "Mississippi"},
+    {"MO", "Missouri"},
+    {"MT", "Montana"},
+    {"NE", "Nebraska"},
+    {"NV", "Nevada"},
+    {"NH", "New Hampshire"},
+    {"NJ", "New Jersey"},
+    {"NM", "New Mexico"},
+    {"NY", "New York"},
+    {"NC", "North Carolina"},
+    {"ND", "North Dakota"},
+    {"OH", "Ohio"},
+    {"OK", "Oklahoma"},
+    {"OR", "Oregon"},
+    {"PA", "Pennsylvania"},
+    {"RI", "Rhode Island"},
+    {"SC", "South Carolina"},
+    {"SD", "South Dakota"},
+    {"TN", "Tennessee"},
+    {"TX", "Texas"},
+    {"UT", "Utah"},
+    {"VT", "Vermont"},
+    {"VA", "Virginia"},
+    {"WA", "Washington"},
+    {"WV", "West Virginia"},
+    {"WI", "Wisconsin"},
+    {"WY", "Wyoming"},
+    {"DC", "District of Columbia"} };

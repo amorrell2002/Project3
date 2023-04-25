@@ -42,6 +42,16 @@ vector<County*> loadAndSort(string sortSelection, string foodAccessSelection)
         }
 
     }
+
+    if (sortSelection == "merge")
+    {
+        Merge::MergeSort(counties, 0, counties.size() - 1, foodAccessSelection);
+    }
+    else if (sortSelection == "shell")
+    {
+        Shell::Sort(counties, foodAccessSelection);
+
+    }
     return counties;
 
 

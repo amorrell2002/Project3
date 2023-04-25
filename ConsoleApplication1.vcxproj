@@ -24,6 +24,7 @@
     <ProjectGuid>{af7802e9-6bb6-4773-af7d-41d512f3fade}</ProjectGuid>
     <RootNamespace>ConsoleApplication1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>main.cpp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="County.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="MergeSort.cpp" />
@@ -156,6 +157,7 @@
     <Image Include="..\..\..\..\OneDrive\Desktop\blankGraph.png" />
     <Image Include="..\..\..\..\OneDrive\Desktop\plotPoint.png" />
     <Image Include="blankGraph.png" />
+    <Image Include="blueplotPoint.png" />
     <Image Include="plotPoint.png" />
     <Image Include="x64\Debug\blankGraph.png.png" />
   </ItemGroup>
