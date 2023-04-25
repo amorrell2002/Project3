@@ -1,0 +1,782 @@
+[
+    {
+      "County": "Abbeville County",
+      "State": "SC",
+      "Age": {
+        "Percent 65 and Older": 22.4,
+        "Percent Under 18 Years": 19.8,
+        "Percent Under 5 Years": 4.7
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 15.6,
+        "High School or Higher": 81.7
+      },
+      "Employment": {
+        "Nonemployer Establishments": 1416,
+        "Firms": {
+          "Total": 1450,
+          "Women-Owned": 543,
+          "Men-Owned": 689,
+          "Minority-Owned": 317,
+          "Nonminority-Owned": 1080,
+          "Veteran-Owned": 187,
+          "Nonveteran-Owned": 1211
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.3,
+        "Asian Alone": 0.4,
+        "Black Alone": 27.6,
+        "Hispanic or Latino": 1.6,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.0,
+        "Two or More Races": 1.4,
+        "White Alone": 70.2,
+        "White Alone\t not Hispanic or Latino": 68.9
+      },
+      "Housing": {
+        "Homeownership Rate": 75.0,
+        "Households": 9660,
+        "Housing Units": 12245,
+        "Median Value of Owner-Occupied Units": 90800,
+        "Persons per Household": 2.46
+      },
+      "Income": {
+        "Median Houseold Income": 38741,
+        "Per Capita Income": 22646
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.8,
+        "Land Area": 490.48,
+        "Language Other than English at Home": 2.8,
+        "Living in Same House +1 Years": 90.4,
+        "Manufacturers Shipments": 598825,
+        "Mean Travel Time to Work": 28.1,
+        "Percent Female": 51.6,
+        "Veterans": 1559
+      },
+      "Population": {
+        "2020 Population": 24295,
+        "2010 Population": 25417,
+        "Population per Square Mile": 51.8
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 12507,
+        "Retail Sales": 91371
+      }
+    },
+    {
+      "County": "Acadia Parish",
+      "State": "LA",
+      "Age": {
+        "Percent 65 and Older": 15.8,
+        "Percent Under 18 Years": 25.8,
+        "Percent Under 5 Years": 6.9
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 13.3,
+        "High School or Higher": 79.0
+      },
+      "Employment": {
+        "Nonemployer Establishments": 4533,
+        "Firms": {
+          "Total": 4664,
+          "Women-Owned": 1516,
+          "Men-Owned": 2629,
+          "Minority-Owned": 705,
+          "Nonminority-Owned": 3734,
+          "Veteran-Owned": 388,
+          "Nonveteran-Owned": 4007
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.4,
+        "Asian Alone": 0.3,
+        "Black Alone": 18.0,
+        "Hispanic or Latino": 2.8,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.0,
+        "Two or More Races": 1.6,
+        "White Alone": 79.7,
+        "White Alone\t not Hispanic or Latino": 77.3
+      },
+      "Housing": {
+        "Homeownership Rate": 71.1,
+        "Households": 22236,
+        "Housing Units": 26657,
+        "Median Value of Owner-Occupied Units": 118000,
+        "Persons per Household": 2.76
+      },
+      "Income": {
+        "Median Houseold Income": 43396,
+        "Per Capita Income": 23122
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.3,
+        "Land Area": 655.12,
+        "Language Other than English at Home": 10.0,
+        "Living in Same House +1 Years": 89.8,
+        "Manufacturers Shipments": -1,
+        "Mean Travel Time to Work": 28.9,
+        "Percent Female": 51.1,
+        "Veterans": 2690
+      },
+      "Population": {
+        "2020 Population": 57576,
+        "2010 Population": 61773,
+        "Population per Square Mile": 94.3
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 52706,
+        "Retail Sales": 602739
+      }
+    },
+    {
+      "County": "Accomack County",
+      "State": "VA",
+      "Age": {
+        "Percent 65 and Older": 24.6,
+        "Percent Under 18 Years": 20.7,
+        "Percent Under 5 Years": 5.6
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 19.5,
+        "High School or Higher": 81.5
+      },
+      "Employment": {
+        "Nonemployer Establishments": 2387,
+        "Firms": {
+          "Total": 2997,
+          "Women-Owned": 802,
+          "Men-Owned": 1716,
+          "Minority-Owned": 335,
+          "Nonminority-Owned": 2560,
+          "Veteran-Owned": 212,
+          "Nonveteran-Owned": 2536
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.7,
+        "Asian Alone": 0.8,
+        "Black Alone": 28.8,
+        "Hispanic or Latino": 9.1,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.2,
+        "Two or More Races": 1.7,
+        "White Alone": 67.8,
+        "White Alone\t not Hispanic or Latino": 59.9
+      },
+      "Housing": {
+        "Homeownership Rate": 66.8,
+        "Households": 13438,
+        "Housing Units": 21319,
+        "Median Value of Owner-Occupied Units": 171800,
+        "Persons per Household": 2.35
+      },
+      "Income": {
+        "Median Houseold Income": 46073,
+        "Per Capita Income": 26018
+      },
+      "Miscellaneous": {
+        "Foreign Born": 7.7,
+        "Land Area": 449.5,
+        "Language Other than English at Home": 11.5,
+        "Living in Same House +1 Years": 93.0,
+        "Manufacturers Shipments": 667932,
+        "Mean Travel Time to Work": 22.9,
+        "Percent Female": 51.3,
+        "Veterans": 2606
+      },
+      "Population": {
+        "2020 Population": 33413,
+        "2010 Population": 33164,
+        "Population per Square Mile": 73.8
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 53568,
+        "Retail Sales": 348195
+      }
+    },
+    {
+      "County": "Ada County",
+      "State": "ID",
+      "Age": {
+        "Percent 65 and Older": 14.9,
+        "Percent Under 18 Years": 23.2,
+        "Percent Under 5 Years": 5.6
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 38.5,
+        "High School or Higher": 95.2
+      },
+      "Employment": {
+        "Nonemployer Establishments": 41464,
+        "Firms": {
+          "Total": 41789,
+          "Women-Owned": 14661,
+          "Men-Owned": 19409,
+          "Minority-Owned": 3099,
+          "Nonminority-Owned": 36701,
+          "Veteran-Owned": 3803,
+          "Nonveteran-Owned": 35132
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.8,
+        "Asian Alone": 2.7,
+        "Black Alone": 1.4,
+        "Hispanic or Latino": 8.5,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.2,
+        "Two or More Races": 3.0,
+        "White Alone": 91.9,
+        "White Alone\t not Hispanic or Latino": 84.3
+      },
+      "Housing": {
+        "Homeownership Rate": 69.3,
+        "Households": 173353,
+        "Housing Units": 192630,
+        "Median Value of Owner-Occupied Units": 270800,
+        "Persons per Household": 2.58
+      },
+      "Income": {
+        "Median Houseold Income": 66293,
+        "Per Capita Income": 34919
+      },
+      "Miscellaneous": {
+        "Foreign Born": 5.8,
+        "Land Area": 1052.58,
+        "Language Other than English at Home": 8.7,
+        "Living in Same House +1 Years": 83.7,
+        "Manufacturers Shipments": -1,
+        "Mean Travel Time to Work": 20.7,
+        "Percent Female": 49.9,
+        "Veterans": 29924
+      },
+      "Population": {
+        "2020 Population": 494967,
+        "2010 Population": 392365,
+        "Population per Square Mile": 372.8
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 763099,
+        "Retail Sales": 5766679
+      }
+    },
+    {
+      "County": "Adair County",
+      "State": "IA",
+      "Age": {
+        "Percent 65 and Older": 23.0,
+        "Percent Under 18 Years": 21.8,
+        "Percent Under 5 Years": 5.6
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 18.5,
+        "High School or Higher": 94.2
+      },
+      "Employment": {
+        "Nonemployer Establishments": 609,
+        "Firms": {
+          "Total": 914,
+          "Women-Owned": 304,
+          "Men-Owned": 499,
+          "Minority-Owned": 0,
+          "Nonminority-Owned": 861,
+          "Veteran-Owned": 185,
+          "Nonveteran-Owned": 679
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.3,
+        "Asian Alone": 0.5,
+        "Black Alone": 0.6,
+        "Hispanic or Latino": 2.5,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.0,
+        "Two or More Races": 1.2,
+        "White Alone": 97.4,
+        "White Alone\t not Hispanic or Latino": 95.1
+      },
+      "Housing": {
+        "Homeownership Rate": 74.3,
+        "Households": 3200,
+        "Housing Units": 3718,
+        "Median Value of Owner-Occupied Units": 104600,
+        "Persons per Household": 2.17
+      },
+      "Income": {
+        "Median Houseold Income": 53363,
+        "Per Capita Income": 30822
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.6,
+        "Land Area": 569.27,
+        "Language Other than English at Home": 3.2,
+        "Living in Same House +1 Years": 86.1,
+        "Manufacturers Shipments": -1,
+        "Mean Travel Time to Work": 25.1,
+        "Percent Female": 50.2,
+        "Veterans": 492
+      },
+      "Population": {
+        "2020 Population": 7496,
+        "2010 Population": 7682,
+        "Population per Square Mile": 13.5
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": -1,
+        "Retail Sales": 63002
+      }
+    },
+    {
+      "County": "Adair County 1",
+      "State": "KY",
+      "Age": {
+        "Percent 65 and Older": 19.2,
+        "Percent Under 18 Years": 19.9,
+        "Percent Under 5 Years": 5.2
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 15.7,
+        "High School or Higher": 79.6
+      },
+      "Employment": {
+        "Nonemployer Establishments": 1623,
+        "Firms": {
+          "Total": 1725,
+          "Women-Owned": 342,
+          "Men-Owned": 1076,
+          "Minority-Owned": 78,
+          "Nonminority-Owned": 1617,
+          "Veteran-Owned": 144,
+          "Nonveteran-Owned": 1484
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.3,
+        "Asian Alone": 0.4,
+        "Black Alone": 2.9,
+        "Hispanic or Latino": 2.2,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.1,
+        "Two or More Races": 1.5,
+        "White Alone": 94.8,
+        "White Alone\t not Hispanic or Latino": 93.0
+      },
+      "Housing": {
+        "Homeownership Rate": 76.1,
+        "Households": 6977,
+        "Housing Units": 8632,
+        "Median Value of Owner-Occupied Units": 96400,
+        "Persons per Household": 2.56
+      },
+      "Income": {
+        "Median Houseold Income": 38021,
+        "Per Capita Income": 21196
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.6,
+        "Land Area": 405.28,
+        "Language Other than English at Home": 2.6,
+        "Living in Same House +1 Years": 89.0,
+        "Manufacturers Shipments": 153105,
+        "Mean Travel Time to Work": 26.4,
+        "Percent Female": 50.2,
+        "Veterans": 1104
+      },
+      "Population": {
+        "2020 Population": 18903,
+        "2010 Population": 18656,
+        "Population per Square Mile": 46.0
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": -1,
+        "Retail Sales": 204296
+      }
+    },
+    {
+      "County": "Adair County 2",
+      "State": "MO",
+      "Age": {
+        "Percent 65 and Older": 15.1,
+        "Percent Under 18 Years": 17.9,
+        "Percent Under 5 Years": 5.2
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 31.0,
+        "High School or Higher": 90.1
+      },
+      "Employment": {
+        "Nonemployer Establishments": 1638,
+        "Firms": {
+          "Total": 2175,
+          "Women-Owned": 455,
+          "Men-Owned": 1335,
+          "Minority-Owned": 59,
+          "Nonminority-Owned": 1974,
+          "Veteran-Owned": 298,
+          "Nonveteran-Owned": 1655
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.4,
+        "Asian Alone": 2.6,
+        "Black Alone": 3.4,
+        "Hispanic or Latino": 2.6,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.1,
+        "Two or More Races": 2.0,
+        "White Alone": 91.5,
+        "White Alone\t not Hispanic or Latino": 89.4
+      },
+      "Housing": {
+        "Homeownership Rate": 60.1,
+        "Households": 9258,
+        "Housing Units": 11645,
+        "Median Value of Owner-Occupied Units": 126800,
+        "Persons per Household": 2.45
+      },
+      "Income": {
+        "Median Houseold Income": 41929,
+        "Per Capita Income": 22847
+      },
+      "Miscellaneous": {
+        "Foreign Born": 4.1,
+        "Land Area": 567.32,
+        "Language Other than English at Home": 5.9,
+        "Living in Same House +1 Years": 75.1,
+        "Manufacturers Shipments": 282157,
+        "Mean Travel Time to Work": 16.8,
+        "Percent Female": 52.0,
+        "Veterans": 1176
+      },
+      "Population": {
+        "2020 Population": 25314,
+        "2010 Population": 25607,
+        "Population per Square Mile": 45.1
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": -1,
+        "Retail Sales": 336233
+      }
+    },
+    {
+      "County": "Adair County 3",
+      "State": "OK",
+      "Age": {
+        "Percent 65 and Older": 15.8,
+        "Percent Under 18 Years": 27.0,
+        "Percent Under 5 Years": 7.4
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 11.6,
+        "High School or Higher": 80.8
+      },
+      "Employment": {
+        "Nonemployer Establishments": 1383,
+        "Firms": {
+          "Total": 1864,
+          "Women-Owned": 618,
+          "Men-Owned": 978,
+          "Minority-Owned": 770,
+          "Nonminority-Owned": 968,
+          "Veteran-Owned": 109,
+          "Nonveteran-Owned": 1722
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 46.1,
+        "Asian Alone": 0.8,
+        "Black Alone": 0.6,
+        "Hispanic or Latino": 7.1,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.1,
+        "Two or More Races": 10.3,
+        "White Alone": 42.1,
+        "White Alone\t not Hispanic or Latino": 39.4
+      },
+      "Housing": {
+        "Homeownership Rate": 69.3,
+        "Households": 7733,
+        "Housing Units": 9415,
+        "Median Value of Owner-Occupied Units": 87600,
+        "Persons per Household": 2.86
+      },
+      "Income": {
+        "Median Houseold Income": 34695,
+        "Per Capita Income": 17026
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.8,
+        "Land Area": 573.48,
+        "Language Other than English at Home": 8.3,
+        "Living in Same House +1 Years": 90.2,
+        "Manufacturers Shipments": 485013,
+        "Mean Travel Time to Work": 26.7,
+        "Percent Female": 50.0,
+        "Veterans": 1268
+      },
+      "Population": {
+        "2020 Population": 19495,
+        "2010 Population": 22683,
+        "Population per Square Mile": 39.6
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 7219,
+        "Retail Sales": 123351
+      }
+    },
+    {
+      "County": "Adams County",
+      "State": "CO",
+      "Age": {
+        "Percent 65 and Older": 10.7,
+        "Percent Under 18 Years": 26.1,
+        "Percent Under 5 Years": 6.9
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 24.3,
+        "High School or Higher": 83.8
+      },
+      "Employment": {
+        "Nonemployer Establishments": 36594,
+        "Firms": {
+          "Total": 34447,
+          "Women-Owned": 12562,
+          "Men-Owned": 18398,
+          "Minority-Owned": 10916,
+          "Nonminority-Owned": 22016,
+          "Veteran-Owned": 3478,
+          "Nonveteran-Owned": 29493
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 2.3,
+        "Asian Alone": 4.5,
+        "Black Alone": 4.0,
+        "Hispanic or Latino": 40.8,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.2,
+        "Two or More Races": 3.2,
+        "White Alone": 85.7,
+        "White Alone\t not Hispanic or Latino": 49.0
+      },
+      "Housing": {
+        "Homeownership Rate": 66.2,
+        "Households": 166450,
+        "Housing Units": 178519,
+        "Median Value of Owner-Occupied Units": 307600,
+        "Persons per Household": 3.0
+      },
+      "Income": {
+        "Median Houseold Income": 71202,
+        "Per Capita Income": 30313
+      },
+      "Miscellaneous": {
+        "Foreign Born": 15.3,
+        "Land Area": 1167.65,
+        "Language Other than English at Home": 29.0,
+        "Living in Same House +1 Years": 84.7,
+        "Manufacturers Shipments": 7311352,
+        "Mean Travel Time to Work": 29.8,
+        "Percent Female": 49.4,
+        "Veterans": 26796
+      },
+      "Population": {
+        "2020 Population": 519572,
+        "2010 Population": 441603,
+        "Population per Square Mile": 378.2
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 705841,
+        "Retail Sales": 5548735
+      }
+    },
+    {
+      "County": "Adams County 1",
+      "State": "IA",
+      "Age": {
+        "Percent 65 and Older": 23.7,
+        "Percent Under 18 Years": 20.9,
+        "Percent Under 5 Years": 5.3
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 15.6,
+        "High School or Higher": 93.8
+      },
+      "Employment": {
+        "Nonemployer Establishments": 345,
+        "Firms": {
+          "Total": 284,
+          "Women-Owned": 64,
+          "Men-Owned": 157,
+          "Minority-Owned": 0,
+          "Nonminority-Owned": 261,
+          "Veteran-Owned": 37,
+          "Nonveteran-Owned": 210
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.5,
+        "Asian Alone": 0.7,
+        "Black Alone": 0.5,
+        "Hispanic or Latino": 1.4,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.0,
+        "Two or More Races": 0.8,
+        "White Alone": 97.4,
+        "White Alone\t not Hispanic or Latino": 96.1
+      },
+      "Housing": {
+        "Homeownership Rate": 81.7,
+        "Households": 1598,
+        "Housing Units": 2012,
+        "Median Value of Owner-Occupied Units": 87500,
+        "Persons per Household": 2.21
+      },
+      "Income": {
+        "Median Houseold Income": 49255,
+        "Per Capita Income": 28440
+      },
+      "Miscellaneous": {
+        "Foreign Born": 0.6,
+        "Land Area": 423.44,
+        "Language Other than English at Home": 1.5,
+        "Living in Same House +1 Years": 88.7,
+        "Manufacturers Shipments": -1,
+        "Mean Travel Time to Work": 21.3,
+        "Percent Female": 50.1,
+        "Veterans": 272
+      },
+      "Population": {
+        "2020 Population": 3704,
+        "2010 Population": 4029,
+        "Population per Square Mile": 9.5
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": -1,
+        "Retail Sales": 21326
+      }
+    },
+    {
+      "County": "Adams County 2",
+      "State": "ID",
+      "Age": {
+        "Percent 65 and Older": 29.9,
+        "Percent Under 18 Years": 17.3,
+        "Percent Under 5 Years": 3.9
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 21.2,
+        "High School or Higher": 90.2
+      },
+      "Employment": {
+        "Nonemployer Establishments": 361,
+        "Firms": {
+          "Total": 321,
+          "Women-Owned": 84,
+          "Men-Owned": 108,
+          "Minority-Owned": 0,
+          "Nonminority-Owned": 279,
+          "Veteran-Owned": 0,
+          "Nonveteran-Owned": 269
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 1.4,
+        "Asian Alone": 0.9,
+        "Black Alone": 0.4,
+        "Hispanic or Latino": 3.6,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.4,
+        "Two or More Races": 2.6,
+        "White Alone": 94.3,
+        "White Alone\t not Hispanic or Latino": 91.6
+      },
+      "Housing": {
+        "Homeownership Rate": 80.3,
+        "Households": 1757,
+        "Housing Units": 2705,
+        "Median Value of Owner-Occupied Units": 215500,
+        "Persons per Household": 2.29
+      },
+      "Income": {
+        "Median Houseold Income": 48856,
+        "Per Capita Income": 28026
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.2,
+        "Land Area": 1363.06,
+        "Language Other than English at Home": 3.5,
+        "Living in Same House +1 Years": 81.6,
+        "Manufacturers Shipments": -1,
+        "Mean Travel Time to Work": 24.8,
+        "Percent Female": 48.6,
+        "Veterans": 531
+      },
+      "Population": {
+        "2020 Population": 4379,
+        "2010 Population": 3976,
+        "Population per Square Mile": 2.9
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": -1,
+        "Retail Sales": -1
+      }
+    },
+    {
+      "County": "Adams County 3",
+      "State": "IL",
+      "Age": {
+        "Percent 65 and Older": 20.7,
+        "Percent Under 18 Years": 22.6,
+        "Percent Under 5 Years": 6.3
+      },
+      "Education": {
+        "Bachelor's Degree or Higher": 25.0,
+        "High School or Higher": 92.5
+      },
+      "Employment": {
+        "Nonemployer Establishments": 3922,
+        "Firms": {
+          "Total": 5074,
+          "Women-Owned": 1251,
+          "Men-Owned": 2617,
+          "Minority-Owned": 269,
+          "Nonminority-Owned": 4546,
+          "Veteran-Owned": 477,
+          "Nonveteran-Owned": 4158
+        }
+      },
+      "Ethnicities": {
+        "American Indian and Alaska Native Alone": 0.3,
+        "Asian Alone": 0.9,
+        "Black Alone": 3.9,
+        "Hispanic or Latino": 1.8,
+        "Native Hawaiian and Other Pacific Islander Alone": 0.0,
+        "Two or More Races": 2.1,
+        "White Alone": 92.8,
+        "White Alone\t not Hispanic or Latino": 91.4
+      },
+      "Housing": {
+        "Homeownership Rate": 71.8,
+        "Households": 27112,
+        "Housing Units": 30244,
+        "Median Value of Owner-Occupied Units": 127800,
+        "Persons per Household": 2.38
+      },
+      "Income": {
+        "Median Houseold Income": 52993,
+        "Per Capita Income": 30343
+      },
+      "Miscellaneous": {
+        "Foreign Born": 1.4,
+        "Land Area": 855.2,
+        "Language Other than English at Home": 2.1,
+        "Living in Same House +1 Years": 88.9,
+        "Manufacturers Shipments": -1,
+        "Mean Travel Time to Work": 17.3,
+        "Percent Female": 50.7,
+        "Veterans": 4516
+      },
+      "Population": {
+        "2020 Population": 65737,
+        "2010 Population": 67103,
+        "Population per Square Mile": 78.5
+      },
+      "Sales": {
+        "Accommodation and Food Services Sales": 103212,
+        "Retail Sales": 1066523
+      }
+    }
+]
