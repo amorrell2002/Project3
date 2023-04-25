@@ -39,17 +39,33 @@ void Graph::draw(vector<County*>& counties, string demographicSelection, string 
     sf::Sprite pointSprite;
     pointSprite.setTexture(pointTexture);
     //scale
-    pointSprite.setScale(sf::Vector2f(0.05f, 0.05f));
+    pointSprite.setScale(sf::Vector2f(0.03f, 0.03f));
+
+    //Make a sprite for the extreme points
+    sf::Texture extremePointTexture;
+    extremePointTexture.loadFromFile("bluePlotPoint.png");
+    sf::Sprite extremePointSprite;
+    extremePointSprite.setTexture(extremePointTexture);
+    //scale
+    extremePointSprite.setScale(sf::Vector2f(0.01f, 0.01f));
 
     window.clear(Color::Black);
     window.draw(blankGraphSprite);
     //Print dots for counties
     for (int i = 0; i < counties.size() - 1; i++)
     {
-        float x = 1181 - 1181 * Shell::GetStatistic(counties[i], demographicSelection) / 100;
-        float y = 1168 - 1168 * Shell::GetStatistic(counties[i], foodAccessSelection) / counties[i]->population2010;
-        pointSprite.setPosition(sf::Vector2f(x, y));
-        window.draw(pointSprite);
+        float x = 126 + 937 * Shell::GetStatistic(counties[i], demographicSelection) / 100;
+        float y = 1040 - (937 * Shell::GetStatistic(counties[i], foodAccessSelection)) / counties[i]->population2010;
+        if (i <= 10 || i >= (counties.size() - 10))
+        {
+            extremePointSprite.setPosition(sf::Vector2f(x, y));
+            window.draw(extremePointSprite);
+        }
+        else
+        {
+            pointSprite.setPosition(sf::Vector2f(x, y));
+            window.draw(pointSprite);
+        }       
     }
     window.display();
 }
