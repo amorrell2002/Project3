@@ -52,7 +52,7 @@ vector<County*> sort(vector<County*> counties, string sortSelection, string food
 {
 
     //make more data
-    DataGenerator::RecombinationGeneration(counties, 33);
+    DataGenerator::DeBoxifiedRecGen(counties, 55);
 
     if (sortSelection == "merge")
     {
@@ -63,7 +63,7 @@ vector<County*> sort(vector<County*> counties, string sortSelection, string food
 
         //timing:
         time_t end = time(nullptr);
-        cout << "Merge sort took " << to_string(end - start) << " to sort through " << to_string(counties.size()) << " data points." << endl;
+        cout << "Merge sort took " << to_string(end - start) << " seconds to sort through " << to_string(counties.size()) << " data points." << endl;
     }
     else if (sortSelection == "shell")
     {
@@ -74,7 +74,7 @@ vector<County*> sort(vector<County*> counties, string sortSelection, string food
 
         //timing:
         time_t end = time(nullptr);
-        cout << "Shell sort took " << to_string(end - start) << " to sort through " << to_string(counties.size()) << " data points." << endl;
+        cout << "Shell sort took " << to_string(end - start) << " seconds to sort through " << to_string(counties.size()) << " data points." << endl;
 
     }
     return counties;

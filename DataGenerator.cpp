@@ -4,7 +4,7 @@
 
 #include "DataGenerator.h"
 
-void DataGenerator::RecombinationGeneration(vector<County*>& counties, int iterations = 35) {
+int DataGenerator::RecombinationGeneration(vector<County*>& counties, int iterations = 35) {
     int initSize = counties.size(); //save the original
     for (int i = 0; i < iterations; ++i) {
         for (int j = 0; j < initSize; ++j) {
@@ -44,9 +44,30 @@ void DataGenerator::RecombinationGeneration(vector<County*>& counties, int itera
             added->lowIncomeBeyondTenMile = counties.at(foodAccessIndex)->lowIncomeBeyondTenMile;
             added->popBeyondTenMile = counties.at(foodAccessIndex)->popBeyondTenMile;
             added->seniorsBeyondTenMile = counties.at(foodAccessIndex)->seniorsBeyondTenMile;
-
-
-
         }
+    }
+    return initSize;
+}
+
+void DataGenerator::DeBoxifiedRecGen(vector<County *> &counties, int iterations) {
+    int initSize = RecombinationGeneration(counties, iterations);
+    for (int i = initSize; i < counties.size(); ++i) {
+        float change = ((float)(i % 5 - 2)/100);
+        counties.at(i)->age65AndOlder += change;
+        counties.at(i)->age18AndUnder += change;
+        counties.at(i)->educationBatchelorsOrHigher += change;
+        counties.at(i)->educationHighSchoolOrHigher += change;
+        counties.at(i)->ethnicAmericanIndianAndAlaskaNative += change;
+        counties.at(i)->ethnicAsian += change;
+        counties.at(i)->ethnicBlack += change;
+        counties.at(i)->ethnicHispanic += change;
+        counties.at(i)->ethnicWhite += change;
+        counties.at(i)->percentFemale += change;
+
+        counties.at(i)->kidsBeyondTenMile += change;
+        counties.at(i)->lowIncomeBeyondTenMile += change;
+        counties.at(i)->popBeyondTenMile += change;
+        counties.at(i)->seniorsBeyondTenMile += change;
+
     }
 }
