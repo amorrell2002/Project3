@@ -200,6 +200,11 @@ int main()
         Graph graph;
         graph.run(counties, strDemographicSelection, strFoodAccessSelection);
 
+        //delete dynamically allocated data
+        for (int i = 0; i < counties.size(); ++i) {
+            delete counties.at(i);
+        }
+
         int selection;
         cout << "Enter 0 to exit the program or 1 to make a new selection\n";
         cin >> selection;
