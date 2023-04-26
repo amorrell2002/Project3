@@ -7,7 +7,7 @@
 #include <iostream>
 #include  <SFML/Graphics.hpp> // replace quotes with less than and greater than symbols
 
-vector<County*> loadAndSort(string sortSelection, string foodAccessSelection)
+vector<County*> load()
 {
     fstream inFile("county_demographics.json");
     json demoFile;
@@ -43,6 +43,13 @@ vector<County*> loadAndSort(string sortSelection, string foodAccessSelection)
 
     }
 
+    return counties;
+
+
+}
+vector<County*> sort(vector<County*> counties, string sortSelection, string foodAccessSelection)
+{
+
     if (sortSelection == "merge")
     {
         Merge::MergeSort(counties, 0, counties.size() - 1, foodAccessSelection);
@@ -56,6 +63,7 @@ vector<County*> loadAndSort(string sortSelection, string foodAccessSelection)
 
 
 }
+
 
 int main()
 
@@ -195,15 +203,11 @@ int main()
 
         }
 
-        vector<County*> counties = loadAndSort(strSortSelection, strFoodAccessSelection);
+        vector<County*> counties = load();
+        counties = sort(counties, strSortSelection, strFoodAccessSelection);
 
         Graph graph;
         graph.run(counties, strDemographicSelection, strFoodAccessSelection);
-
-        //delete dynamically allocated data
-        for (int i = 0; i < counties.size(); ++i) {
-            delete counties.at(i);
-        }
 
         int selection;
         cout << "Enter 0 to exit the program or 1 to make a new selection\n";

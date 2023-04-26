@@ -57,8 +57,8 @@ void Graph::draw(vector<County*>& counties, string demographicSelection, string 
         //cout << "demographic value: " << Shell::GetStatistic(counties[i], demographicSelection) << endl;
         //cout << "food access value: " << Shell::GetStatistic(counties[i], foodAccessSelection) << endl;
 
-        float x = 126 + 937 * Shell::GetStatistic(counties[i], demographicSelection) / 100;
-        float y = 1040 - (937 * Shell::GetStatistic(counties[i], foodAccessSelection)) / 100;
+        float x = 126 + 900 * Shell::GetStatistic(counties[i], demographicSelection) / 100;
+        float y = 1040 - (900 * Shell::GetStatistic(counties[i], foodAccessSelection)) / 100;
         
         //cout << "x coordinate: " << x << endl;
        // cout << "y coordinate: " << y << endl;
