@@ -12,7 +12,7 @@ struct DataGenerator {
     /// \param iterations how many times to generate additional data; (final size) = (initial size) * (iterations + 1)
     static int RecombinationGeneration(vector<County*>& counties, int iterations);
 
-    static void DeBoxifiedRecGen(vector<County*>& counties, int iterations);
+    static void DeBoxifiedRecGen(vector<County*>& counties, int iterations, int amountToChangeBy);
 };
 
 

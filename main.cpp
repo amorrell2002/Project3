@@ -52,7 +52,7 @@ vector<County*> sort(vector<County*> counties, string sortSelection, string food
 {
 
     //make more data
-    DataGenerator::DeBoxifiedRecGen(counties, 55);
+    DataGenerator::DeBoxifiedRecGen(counties, 55, 2);
 
     if (sortSelection == "merge")
     {
