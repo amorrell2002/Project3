@@ -8,11 +8,15 @@ void DataGenerator::RecombinationGeneration(vector<County*>& counties, int itera
     int initSize = counties.size(); //save the original
     for (int i = 0; i < iterations; ++i) {
         for (int j = 0; j < initSize; ++j) {
-            int demographicsIndex = i-1;
-            int foodAccessIndex = i;
+            int demographicsIndex = j-1;
+            int foodAccessIndex = j+i;
             if(demographicsIndex < 0){
                 //can't have a negative index, so go to the last element from the original vector
                 demographicsIndex = initSize-1;
+            }
+            if(foodAccessIndex >= initSize){
+                //can't go beyond what data we started with
+                foodAccessIndex -= initSize;
             }
 
             //create a new, fake county

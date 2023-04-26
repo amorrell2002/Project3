@@ -5,7 +5,8 @@
 #include "MergeSort.h"
 #include "Shell.h"
 #include <iostream>
-#include  <SFML/Graphics.hpp> // replace quotes with less than and greater than symbols
+//#include  <SFML/Graphics.hpp> // replace quotes with less than and greater than symbols
+#include "DataGenerator.h"
 
 vector<County*> load()
 {
@@ -50,13 +51,30 @@ vector<County*> load()
 vector<County*> sort(vector<County*> counties, string sortSelection, string foodAccessSelection)
 {
 
+    //make more data
+    DataGenerator::RecombinationGeneration(counties, 33);
+
     if (sortSelection == "merge")
     {
+        //timing:
+        time_t start = time(nullptr);
+
         Merge::MergeSort(counties, 0, counties.size() - 1, foodAccessSelection);
+
+        //timing:
+        time_t end = time(nullptr);
+        cout << "Merge sort took " << to_string(end - start) << " to sort through " << to_string(counties.size()) << " data points." << endl;
     }
     else if (sortSelection == "shell")
     {
+        //timing:
+        time_t start = time(nullptr);
+
         Shell::Sort(counties, foodAccessSelection);
+
+        //timing:
+        time_t end = time(nullptr);
+        cout << "Shell sort took " << to_string(end - start) << " to sort through " << to_string(counties.size()) << " data points." << endl;
 
     }
     return counties;

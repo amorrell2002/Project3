@@ -6,7 +6,7 @@
 #define PROJECT3_DATAGENERATOR_H
 #include "County_Class/County.h"
 
-class DataGenerator {
+struct DataGenerator {
     ///
     /// \param counties
     /// \param iterations how many times to generate additional data; (final size) = (initial size) * (iterations + 1)

@@ -3,6 +3,7 @@
 #include "Shell_Sort/Shell.h"
 #include <vector>
 #include <map>
+#include "DataGenerator.h"
 
 static bool vectorEquals(vector<County*> v1, vector<County*> v2) {
     if (v1.size() != v2.size()) {
@@ -61,6 +62,9 @@ int main()
 
     }
 
+    //make more data
+    DataGenerator::RecombinationGeneration(counties, 33);
+
     vector<County*> shellCopy;
     for(County* i: counties)
     {
@@ -69,7 +73,16 @@ int main()
     }
     cout << "===============" << endl;
     cout << "Merge Sort" << endl;
+
+    //timing:
+    time_t start = time(nullptr);
+
     Merge::MergeSort(counties, 0, counties.size() - 1, "age65AndOlder");
+
+    //timing:
+    time_t end = time(nullptr);
+    cout << "Merge sort took " << to_string(end - start) << " to sort through " << to_string(counties.size()) << " data points." << endl;
+
     for(County* i: counties)
     {    
         cout << i->countyName << " : " << i->age65AndOlder << endl;
@@ -77,7 +90,16 @@ int main()
 
     cout << "===============" << endl;
     cout << "Shell Sort" << endl;
+
+    //timing:
+    start = time(nullptr);
+
     Shell::Sort(shellCopy, "age65AndOlder");
+
+    //timing:
+    end = time(nullptr);
+    cout << "Merge sort took " << to_string(end - start) << " to sort through " << to_string(counties.size()) << " data points." << endl;
+
     for(County* i: shellCopy)
     {
         cout << i->countyName << " : " << i->age65AndOlder << endl;
