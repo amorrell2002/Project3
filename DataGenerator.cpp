@@ -49,10 +49,10 @@ int DataGenerator::RecombinationGeneration(vector<County*>& counties, int iterat
     return initSize;
 }
 
-void DataGenerator::DeBoxifiedRecGen(vector<County *> &counties, int iterations) {
+void DataGenerator::DeBoxifiedRecGen(vector<County *> &counties, int iterations, int amountToChangeBy) {
     int initSize = RecombinationGeneration(counties, iterations);
     for (int i = initSize; i < counties.size(); ++i) {
-        float change = ((float)(i % 5 - 2)/100);
+        float change = ((float)(i % (2 * amountToChangeBy + 1) - amountToChangeBy));
         counties.at(i)->age65AndOlder += change;
         counties.at(i)->age18AndUnder += change;
         counties.at(i)->educationBatchelorsOrHigher += change;
