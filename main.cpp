@@ -4,9 +4,9 @@
 #include "County.h"
 #include "MergeSort.h"
 #include "Shell.h"
+#include "DataGenerator.h"
 #include <iostream>
 #include  <SFML/Graphics.hpp> // replace quotes with less than and greater than symbols
-#include "DataGenerator.h"
 
 vector<County*> load()
 {

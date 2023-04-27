@@ -30,6 +30,9 @@
     <ClCompile Include="Shell.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DataGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,3 +1,4 @@
+
 //
 // Created by cbaks on 4/26/2023.
 //
@@ -8,20 +9,20 @@ int DataGenerator::RecombinationGeneration(vector<County*>& counties, int iterat
     int initSize = counties.size(); //save the original
     for (int i = 0; i < iterations; ++i) {
         for (int j = 0; j < initSize; ++j) {
-            int demographicsIndex = j-1;
-            int foodAccessIndex = j+i;
-            if(demographicsIndex < 0){
+            int demographicsIndex = j - 1;
+            int foodAccessIndex = j + i;
+            if (demographicsIndex < 0) {
                 //can't have a negative index, so go to the last element from the original vector
-                demographicsIndex = initSize-1;
+                demographicsIndex = initSize - 1;
             }
-            if(foodAccessIndex >= initSize){
+            if (foodAccessIndex >= initSize) {
                 //can't go beyond what data we started with
                 foodAccessIndex -= initSize;
             }
 
             //create a new, fake county
             counties.push_back(new County);
-            County* added = counties.at(counties.size()-1);
+            County* added = counties.at(counties.size() - 1);
 
             //set the variables for the county we just added
             added->countyName = "faux_" + to_string(i) + "_" + to_string(j);
@@ -49,7 +50,7 @@ int DataGenerator::RecombinationGeneration(vector<County*>& counties, int iterat
     return initSize;
 }
 
-void DataGenerator::DeBoxifiedRecGen(vector<County *> &counties, int iterations, int amountToChangeBy) {
+void DataGenerator::DeBoxifiedRecGen(vector<County*>& counties, int iterations, int amountToChangeBy) {
     int initSize = RecombinationGeneration(counties, iterations);
     for (int i = initSize; i < counties.size(); ++i) {
         float change = ((float)(i % (2 * amountToChangeBy + 1) - amountToChangeBy));

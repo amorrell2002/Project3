@@ -1,10 +1,11 @@
+#pragma once
 //
 // Created by cbaks on 4/26/2023.
 //
 
 #ifndef PROJECT3_DATAGENERATOR_H
 #define PROJECT3_DATAGENERATOR_H
-#include "County_Class/County.h"
+#include "County.h"
 
 struct DataGenerator {
     ///

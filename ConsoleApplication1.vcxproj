@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataGenerator.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="County.cpp" />
     <ClCompile Include="Graph.cpp" />
@@ -148,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="County.h" />
+    <ClInclude Include="DataGenerator.h" />
     <ClInclude Include="Graph.h" />
     <ClInclude Include="json.hpp" />
     <ClInclude Include="MergeSort.h" />
